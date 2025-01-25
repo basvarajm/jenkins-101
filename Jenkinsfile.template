@@ -4,6 +4,9 @@ pipeline {
             label 'Agent1'
             }
       }
+      triggers {
+        pollSCM('*/5 * * * *')  // every 5 minutes
+      }
     stages {
         stage('Build') {
             steps {
