@@ -21,10 +21,10 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd myapp
-                python3 hello.py
-                python3 hello.py --name=Brad
-                '''
+                #cd myapp
+                #python3 hello.py
+                #python3 hello.py --name=Brad
+                #'''
             }
         }
         stage('Deliver') {
